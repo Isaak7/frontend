@@ -1,0 +1,460 @@
+*{
+    font-family: 'Raleway', sans-serif;
+}
+
+body{
+    background: #101010 !important;
+}
+
+#nombre{
+    color: #c7af8b;
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.bg-black{
+    color: #fff;
+    background: #000;
+}
+
+#main-header .item{
+    width: 20%;
+
+}
+
+/*Borde Animado*/
+#main-header .borde{
+    /*line-height: 2;*/
+    color: #fff;
+    position: relative;
+}
+
+#main-header  .borde:after {
+    content: "";
+    display:block;
+    width: 0;
+    height: 5%;
+    background: #fff;
+    position: absolute;
+    top: 0;
+    transition: all .3s;
+}
+
+#main-header  .borde:hover::after {
+    width: 100%;
+}
+
+.uno:after {
+    left: 50%;
+}
+
+.uno:hover::after{
+    left: 0;
+}
+
+.dos:after {
+    left: 0;
+}
+
+.tres:after {
+    right: 0;
+}
+
+.cuatro:after {
+    left: 50%;
+}
+
+.cuatro:hover::after{
+    left: 0;
+}
+
+/*Esquina Pagina*/
+#main-header .esquina-pagina{
+    -webkit-transform:translateX(0);
+
+}
+
+.esquina-pagina:before{
+    content:'';
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+
+    width: 0px;
+    height: 0px;
+
+    background: 
+    -webkit-linear-gradient(
+        45deg,white 45%, #aaa 50%, #ccc 60%, white
+    );
+
+    -webkit-transition-duration: 0.3s;
+
+}
+
+.esquina-pagina:hover:before{
+    width: 25%;
+    height: 25%;
+}
+
+/*Progress Bar circular*/  
+#habilidades .agilidades {
+    margin-top: 0.25em;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    overflow: hidden;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+  }
+  
+  #habilidades .agilidades .circular-progress {
+    margin: auto;
+    position: relative;
+  }
+  
+ .circular-progress,
+  .circular-progress:before,
+  .circular-progress:after {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+  }
+  
+  .circular-progress:before,
+  .circular-progress:after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+    text-align: center;
+  }
+  
+  .circular-progress:before {
+    padding: .5em;
+    line-height: 120px;
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  
+  .circular-progress:after {
+    font-size: 0.8rem;
+    font-weight: normal;
+    text-transform: uppercase;
+    line-height: 230px;
+  }
+  
+  .html {
+    background: -webkit-linear-gradient(90deg, #4bbf73 50%, rgba(26, 255, 160, 0.3) 50%);
+    background: linear-gradient(0deg, #4bbf73 50%, rgba(26, 255, 160, 0.3) 50%);
+    -webkit-transform: rotate(162deg);
+        -ms-transform: rotate(162deg);
+            transform: rotate(162deg);
+  }
+  
+  .html:after {
+    color: #1f9bcf;
+  }
+  
+  .html:before {
+    color: #fff;
+    background: #111 content-box;
+    -webkit-transform: rotate(-162deg);
+        -ms-transform: rotate(-162deg);
+            transform: rotate(-162deg);
+    content: "90%";
+  }
+  
+  .html:after {
+    background: -webkit-linear-gradient(transparent 50%, #111 50%);
+    background: linear-gradient(transparent 50%, #111 50%);
+    content: "html";
+    -webkit-transform: rotate(-162deg) scale(1.1);
+        -ms-transform: rotate(-162deg) scale(1.1);
+            transform: rotate(-162deg) scale(1.1);
+  }
+  
+  .css {
+    background: -webkit-linear-gradient(90deg, #4bbf73 50%, rgba(26, 255, 160, 0.3) 50%);
+    background: linear-gradient(0deg, #4bbf73 50%, rgba(26, 255, 160, 0.3) 50%);
+    -webkit-transform: rotate(153deg);
+        -ms-transform: rotate(153deg);
+            transform: rotate(153deg);
+  }
+  
+  .css:after {
+    color: #1f9bcf;
+  }
+  
+  .css:before {
+    color: #fff;
+    background: #111 content-box;
+    -webkit-transform: rotate(-153deg);
+        -ms-transform: rotate(-153deg);
+            transform: rotate(-153deg);
+    content: "85%";
+  }
+  
+  .css:after {
+    background: -webkit-linear-gradient(transparent 50%, #111 50%);
+    background: linear-gradient(transparent 50%, #111 50%);
+    content: "css";
+    -webkit-transform: rotate(-153deg) scale(1.1);
+        -ms-transform: rotate(-153deg) scale(1.1);
+            transform: rotate(-153deg) scale(1.1);
+  }
+  
+  .javascript {
+    background: -webkit-linear-gradient(90deg, #4bbf73 50%, rgba(26, 255, 160, 0.3) 50%);
+    background: linear-gradient(0deg, #4bbf73 50%, rgba(26, 255, 160, 0.3) 50%);
+    -webkit-transform: rotate(108deg);
+        -ms-transform: rotate(108deg);
+            transform: rotate(108deg);
+  }
+  
+  .javascript:after {
+    color: #1f9bcf;
+  }
+  
+  .javascript:before {
+    color: #fff;
+    background: #111 content-box;
+    -webkit-transform: rotate(-108deg);
+        -ms-transform: rotate(-108deg);
+            transform: rotate(-108deg);
+    content: "90%";
+  }
+  
+  .javascript:after {
+    background: -webkit-linear-gradient(transparent 50%, #111 50%);
+    background: linear-gradient(transparent 50%, #111 50%);
+    content: "javascript";
+    -webkit-transform: rotate(-108deg) scale(1.1);
+        -ms-transform: rotate(-108deg) scale(1.1);
+            transform: rotate(-108deg) scale(1.1);
+  }
+
+  .php {
+    background: -webkit-linear-gradient(90deg, #4bbf73 50%, rgba(26, 255, 160, 0.3) 50%);
+    background: linear-gradient(0deg, #4bbf73 50%, rgba(26, 255, 160, 0.3) 50%);
+    -webkit-transform: rotate(108deg);
+        -ms-transform: rotate(108deg);
+            transform: rotate(108deg);
+  }
+  
+  .php:after {
+    color: #1f9bcf;
+  }
+  
+  .php:before {
+    color: #fff;
+    background: #111 content-box;
+    -webkit-transform: rotate(-108deg);
+        -ms-transform: rotate(-108deg);
+            transform: rotate(-108deg);
+    content: "90%";
+  }
+  
+  .php:after {
+    background: -webkit-linear-gradient(transparent 50%, #111 50%);
+    background: linear-gradient(transparent 50%, #111 50%);
+    content: "php";
+    -webkit-transform: rotate(-108deg) scale(1.1);
+        -ms-transform: rotate(-108deg) scale(1.1);
+            transform: rotate(-108deg) scale(1.1);
+  }
+
+  .bootstrap {
+    background: -webkit-linear-gradient(90deg, #4bbf73 50%, rgba(26, 255, 160, 0.3) 50%);
+    background: linear-gradient(0deg, #4bbf73 50%, rgba(26, 255, 160, 0.3) 50%);
+    -webkit-transform: rotate(144deg);
+        -ms-transform: rotate(144deg);
+            transform: rotate(144deg);
+  }
+  
+  .bootstrap:after {
+    color: #1f9bcf;
+  }
+  
+  .bootstrap:before {
+    color: #fff;
+    background: #111 content-box;
+    -webkit-transform: rotate(-144deg);
+        -ms-transform: rotate(-144deg);
+            transform: rotate(-144deg);
+    content: "80%";
+  }
+  
+  .bootstrap:after {
+    background: -webkit-linear-gradient(transparent 50%, #111 50%);
+    background: linear-gradient(transparent 50%, #111 50%);
+    content: "bootstrap";
+    -webkit-transform: rotate(-144deg) scale(1.1);
+        -ms-transform: rotate(-144deg) scale(1.1);
+            transform: rotate(-144deg) scale(1.1);
+  }
+
+  .sql {
+    background: -webkit-linear-gradient(90deg, #4bbf73 50%, rgba(26, 255, 160, 0.3) 50%);
+    background: linear-gradient(0deg, #4bbf73 50%, rgba(26, 255, 160, 0.3) 50%);
+    -webkit-transform: rotate(117deg);
+        -ms-transform: rotate(117deg);
+            transform: rotate(117deg);
+  }
+  
+  .sql:after {
+    color: #1f9bcf;
+  }
+  
+  .sql:before {
+    color: #fff;
+    background: #111 content-box;
+    -webkit-transform: rotate(-117deg);
+        -ms-transform: rotate(-117deg);
+            transform: rotate(-117deg);
+    content: "65%";
+  }
+  
+  .sql:after {
+    background: -webkit-linear-gradient(transparent 50%, #111 50%);
+    background: linear-gradient(transparent 50%, #111 50%);
+    content: "sql";
+    -webkit-transform: rotate(-117deg) scale(1.1);
+        -ms-transform: rotate(-117deg) scale(1.1);
+            transform: rotate(-117deg) scale(1.1);
+  }
+
+  .scrum {
+    background: -webkit-linear-gradient(90deg, #4bbf73 50%, rgba(26, 255, 160, 0.3) 50%);
+    background: linear-gradient(0deg, #4bbf73 50%, rgba(26, 255, 160, 0.3) 50%);
+    -webkit-transform: rotate(126deg);
+        -ms-transform: rotate(126deg);
+            transform: rotate(126deg);
+  }
+  
+  .scrum:after {
+    color: #1f9bcf;
+  }
+  
+  .scrum:before {
+    color: #fff;
+    background: #111 content-box;
+    -webkit-transform: rotate(-126deg);
+        -ms-transform: rotate(-126deg);
+            transform: rotate(-126deg);
+    content: "70%";
+  }
+  
+  .scrum:after {
+    background: -webkit-linear-gradient(transparent 50%, #111 50%);
+    background: linear-gradient(transparent 50%, #111 50%);
+    content: "scrum";
+    -webkit-transform: rotate(-126deg) scale(1.1);
+        -ms-transform: rotate(-126deg) scale(1.1);
+            transform: rotate(-126deg) scale(1.1);
+  }
+
+  .android {
+    background: -webkit-linear-gradient(90deg, #4bbf73 50%, rgba(26, 255, 160, 0.3) 50%);
+    background: linear-gradient(0deg, #4bbf73 50%, rgba(26, 255, 160, 0.3) 50%);
+    -webkit-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+            transform: rotate(90deg);
+  }
+  
+  .android:after {
+    color: #1f9bcf;
+  }
+  
+  .android:before {
+    color: #fff;
+    background: #111 content-box;
+    -webkit-transform: rotate(-90deg);
+        -ms-transform: rotate(-90deg);
+            transform: rotate(-90deg);
+    content: "50%";
+  }
+  
+  .android:after {
+    background: -webkit-linear-gradient(transparent 50%, #111 50%);
+    background: linear-gradient(transparent 50%, #111 50%);
+    content: "android";
+    -webkit-transform: rotate(-90deg) scale(1.1);
+        -ms-transform: rotate(-90deg) scale(1.1);
+            transform: rotate(-90deg) scale(1.1);
+  }
+
+  .laravel {
+    background: -webkit-linear-gradient(90deg, #4bbf73 50%, rgba(26, 255, 160, 0.3) 50%);
+    background: linear-gradient(0deg, #4bbf73 50%, rgba(26, 255, 160, 0.3) 50%);
+    -webkit-transform: rotate(135deg);
+        -ms-transform: rotate(135deg);
+            transform: rotate(135deg);
+  }
+  
+  .laravel:after {
+    color: #1f9bcf;
+  }
+  
+  .laravel:before {
+    color: #fff;
+    background: #111 content-box;
+    -webkit-transform: rotate(-135deg);
+        -ms-transform: rotate(-135deg);
+            transform: rotate(-135deg);
+    content: "75%";
+  }
+  
+  .laravel:after {
+    background: -webkit-linear-gradient(transparent 50%, #111 50%);
+    background: linear-gradient(transparent 50%, #111 50%);
+    content: "laravel";
+    -webkit-transform: rotate(-135deg) scale(1.1);
+        -ms-transform: rotate(-135deg) scale(1.1);
+            transform: rotate(-135deg) scale(1.1);
+  }
+
+  .java {
+    background: -webkit-linear-gradient(90deg, #4bbf73 50%, rgba(26, 255, 160, 0.3) 50%);
+    background: linear-gradient(0deg, #4bbf73 50%, rgba(26, 255, 160, 0.3) 50%);
+    -webkit-transform: rotate(108deg);
+        -ms-transform: rotate(108deg);
+            transform: rotate(108deg);
+  }
+  
+  .java:after {
+    color: #1f9bcf;
+  }
+  
+  .java:before {
+    color: #fff;
+    background: #111 content-box;
+    -webkit-transform: rotate(-108deg);
+        -ms-transform: rotate(-108deg);
+            transform: rotate(-108deg);
+    content: "60%";
+  }
+  
+  .java:after {
+    background: -webkit-linear-gradient(transparent 50%, #111 50%);
+    background: linear-gradient(transparent 50%, #111 50%);
+    content: "java";
+    -webkit-transform: rotate(-108deg) scale(1.1);
+        -ms-transform: rotate(-108deg) scale(1.1);
+            transform: rotate(-108deg) scale(1.1);
+  }
+
+
+@media(min-width: 1199px){
+    .item{
+        padding: 2.18em !important;
+    }
+}  
+
+@media(max-width: 680px){
+    #nombre{        
+        font-size: 1.5rem;       
+    }
+}
